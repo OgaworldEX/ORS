@@ -125,7 +125,7 @@ public class AttackResultFrame extends JFrame {
             if(parentThread !=null){
                 parentThread.setStop();
             }
-            //saveResult();
+            saveResult();
         });
         contentPane = new JPanel();
         contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
@@ -473,9 +473,6 @@ public class AttackResultFrame extends JFrame {
             this.parentThread.setStop();
         }
 
-        if(!this.isReadOnlyMode){
-            saveResult();
-        }
         setVisible(false);
         dispose();
     }

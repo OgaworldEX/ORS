@@ -72,6 +72,9 @@ public class PatternMarker {
                 retSb.append("&");
             }else{
                 retSb.append(keyValue);
+                retSb.append(DELIMITER);
+                retSb.append(DELIMITER);
+                retSb.append("&");
             }
         });
 

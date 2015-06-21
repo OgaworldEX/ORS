@@ -39,7 +39,7 @@ public class ExecPlanWorker implements Runnable{
         StringBuilder execNameSb = new StringBuilder();
         execNameSb.append(settings.getSendConfig().getResultOutFolder());
         execNameSb.append(logdataformat.format(new Date()));
-        execNameSb.append(settings.getPositions().isReplace()?"_replace.ogi":"_add.ogi");
+        execNameSb.append(settings.getPositions().isReplace()?"_replace.ors":"_add.ors");
         resultFrame.setExexName(execNameSb.toString());
 
         logger.fatal(execNameSb.toString()); //(´Д` ;)
